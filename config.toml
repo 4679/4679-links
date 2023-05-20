@@ -1,3 +1,4 @@
+baseURL = "https://libnull.com/"
 theme = 'lynx'
 languageCode = 'zh-cn'
 title = '4679'
