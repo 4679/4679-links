@@ -1,0 +1,53 @@
+theme = 'lynx'
+languageCode = 'zh-cn'
+title = '4679'
+copyright = " "
+disableKinds = ["page", "section", "RSS", "sitemap", "404", "taxonomy", "term"]
+[params]
+  attribution = false
+
+[author]
+  name = "4679"
+  headline = "FF14鸟区玩家 Archlinux用户"
+  image = "https://cdn.sep.cc/avatar/9787362c7b4fce655bff66d858903a12?s=512"
+
+  links = [
+    { email = "mailto:admin@libnull.com" },
+    { telegram = "https://t.me/Anaesthesine" },
+    { twitter = "https://twitter.com/AnaAnaxiv" },
+    { github = "https://github.com/4679" },
+    { steam = "https://steamcommunity.com/id/4679" },
+    { link = { href = "https://aur.archlinux.org/account/4679", text = "AUR" } },
+    { link = { href = "https://www.acfun.cn/u/408177", text = "AcFun" } },
+    { link = { href = "https://www.xivmodarchive.com/user/200944", text = "XMA" } },
+    # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+    # { apple = "https://www.apple.com" },
+    # { codepen = "https://codepen.io/username" },
+    # { dev = "https://dev.to/username" },
+    # { discord = "https://discord.gg/invitecode" },
+    # { dribbble = "https://dribbble.com/username" },
+    # { facebook = "https://facebook.com/username" },
+    # { flickr = "https://www.flickr.com/photos/username/" },
+    # { foursquare = "https://foursquare.com/username" },
+    # { gitlab = "https://gitlab.com/username" },
+    # { google = "https://www.google.com/" },
+    # { instagram = "https://instagram.com/username" },
+    # { keybase = "https://keybase.io/username" },
+    # { kickstarter = "https://www.kickstarter.com/profile/username" },
+    # { lastfm = "https://lastfm.com/user/username" },
+    # { linkedin = "https://linkedin.com/in/username" },
+    # { mastodon = "https://mastodon.instance/@username" },
+    # { medium = "https://medium.com/username" },
+    # { microsoft = "https://www.microsoft.com/" },
+    # { patreon = "https://www.patreon.com/username" },
+    # { pinterest = "https://pinterest.com/username" },
+    # { reddit = "https://reddit.com/user/username" },
+    # { slack = "https://workspace.url/team/userid" },
+    # { snapchat = "https://snapchat.com/add/username" },
+    # { soundcloud = "https://soundcloud.com/username" },
+    # { tiktok = "https://tiktok.com/@username" },
+    # { tumblr = "https://username.tumblr.com" },
+    # { twitch = "https://twitch.tv/username" },
+    # { whatsapp = "https://wa.me/phone-number" },
+    # { youtube = "https://youtube.com/username" },
+  ]
