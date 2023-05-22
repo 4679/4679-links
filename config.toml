@@ -10,7 +10,7 @@ disableKinds = ["page", "section", "RSS", "sitemap", "404", "taxonomy", "term"]
 [author]
   name = "4679"
   headline = "FF14鸟区玩家"
-  image = "https://cdn.sep.cc/avatar/9787362c7b4fce655bff66d858903a12?s=512"
+  image = "https://gravatar.webp.se/avatar/9787362c7b4fce655bff66d858903a12?s=256"
 
   links = [
     { email = "mailto:admin@libnull.com" },
