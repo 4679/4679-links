@@ -1,27 +1,33 @@
-name: 'Generate and deploy'
+name: "Generate and deploy"
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-  deploy-website:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Do a git checkout including submodules
+      - name: Checkout including submodules
         uses: actions/checkout@master
         with:
           submodules: true
 
-      - name: Generate and deploy website
-        uses: ronvanderheijden/hugo-rsync-deployment@master
-        env:
-          VPS_DEPLOY_KEY: ${{ secrets.VPS_DEPLOY_KEY }}
-          VPS_DEPLOY_USER: baka
-          VPS_DEPLOY_HOST: kr3.libnull.com
-          VPS_DEPLOY_DEST: /home/baka/docker/caddy/site/lynx/
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          hugo-arguments: '--minify'
-          rsync-arguments: '--archive --compress --xattrs --delete'
+          hugo-version: "0.113.0"
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avz --delete
+          path: src/public/
+          remote_path: ${{ secrets.DEPLOY_PATH }}
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
+
